@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {FehuApp} from "./FehuApp";
 import "./styles.css";
+import { RegisterPage } from "@auth/pages/RegisterPage";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <FehuApp />
+    <RegisterPage />
   </React.StrictMode>
 );
