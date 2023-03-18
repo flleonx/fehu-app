@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { AuthLayout } from "@auth/layouts";
 
 export const LoginPage = () => {
@@ -44,9 +45,9 @@ export const LoginPage = () => {
 
         <p className="text-sm mt-3 flex justify-center">
           ¿No tienes una cuenta?
-          <a href="#" className="font-bold underline pl-2">
+          <Link to="/register" className="font-bold underline pl-2">
             Registrate
-          </a>
+          </Link>
         </p>
       </form>
     </AuthLayout>
