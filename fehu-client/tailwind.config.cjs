@@ -18,5 +18,5 @@ module.exports = {
       lg: "0px 8px 20px 0px rgba(18, 16, 99, 0.06)",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
