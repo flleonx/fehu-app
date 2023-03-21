@@ -17,6 +17,7 @@
     "jsx": "react-jsx",
     "paths": {
       "@auth/*": ["./src/modules/auth/*"],
+      "@common/*": ["./src/modules/common/*"],
       "@dashboard/*": ["./src/modules/dashboard/*"]
     }
   },
