@@ -13,9 +13,14 @@ interface DatabaseConfiguration {
   database_name: string;
 }
 
+interface JwtConfiguration {
+  secret: string;
+}
+
 interface Configuration {
   server: ServerConfiguration;
   database: DatabaseConfiguration;
+  jwt: JwtConfiguration;
 }
 
 export default (): Configuration => ({
@@ -29,5 +34,8 @@ export default (): Configuration => ({
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
     database_name: process.env.DATABASE_NAME,
+  },
+  jwt: {
+    secret: process.env.JWT_SECRET,
   },
 });
